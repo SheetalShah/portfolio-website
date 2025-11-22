@@ -13,15 +13,6 @@ import {
   SiDotnet,
   SiFsharp,
   SiReact,
-  SiRuby,
-  SiMicrosoftazure,
-  SiNodedotjs,
-  SiGithub,
-  SiDocker,
-  SiKubernetes,
-  SiTensorflow,
-  SiPytorch,
-  SiNextdotjs,
   SiApachekafka,
   SiRubyonrails,
   SiGoogle
@@ -134,7 +125,10 @@ const skills = {
   ai: [
     { name: 'Gemini', icon: AiOutlineExperiment },
     { name: 'OpenAI', icon: AiOutlineBulb },
-    { name: 'PyTorch', icon: SiPytorch },
+    { name: 'Prompt Engineering', icon: AiOutlineSolution },
+    { name: 'Langchain', icon: AiOutlineApi },
+    { name: 'Langsmith', icon: AiOutlineCluster },
+    { name: 'Langserve', icon: AiOutlineSolution },
     { name: 'LLM Integration', icon: AiOutlineCloud },
     { name: 'RAG', icon: AiOutlineBulb }
   ]
