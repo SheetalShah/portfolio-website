@@ -1,22 +1,28 @@
 'use client';
 
+import React from 'react';
+import { FaCalculator, FaRocket, FaPuzzlePiece, FaApple } from 'react-icons/fa';
+
 const apps = [
   {
     title: 'Math Mindset',
     description: 'Educational app to enable children to calculate mentally and engage in fun  mental math exercises.',
     appStoreUrl: 'https://apps.apple.com/us/app/math-mindset-fast-mental-math/id1671226684',
+    icon: FaCalculator,
     tags: ['Education', 'Mathematics', 'Free Learning']
   },
   {
     title: 'Astronaut in Space',
     description: 'Educational word game promoting literacy and space exploration knowledge. Created to inspire young minds to explore both language and science in an engaging way.',
     appStoreUrl: 'https://apps.apple.com/eg/app/astronaut-in-space-word-game/id6465081563',
+    icon: FaRocket,
     tags: ['Education', 'Literacy', 'Space']
   },
   {
     title: 'Number Puzzle',
     description: 'Free puzzle game developing critical thinking and problem-solving abilities in children. Designed to strengthen cognitive skills through entertaining challenges.',
     appStoreUrl: 'https://apps.apple.com/eg/app/number-puzzle-sort-numbers/id1554367356',
+    icon: FaPuzzlePiece,
     tags: ['Education', 'Problem Solving', 'Cognitive Development']
   }
 ];
@@ -44,9 +50,12 @@ export default function PortfolioSection() {
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {app.title}
-                </h3>
+                <div className="flex items-center mb-2">
+                  {app.icon && <app.icon className="w-8 h-8 text-blue-600 mr-3" />}
+                  <h3 className="text-xl font-bold text-gray-900">
+                    {app.title}
+                  </h3>
+                </div>
                 <p className="text-gray-600 mb-4">{app.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {app.tags.map((tag, tagIndex) => (
