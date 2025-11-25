@@ -127,8 +127,7 @@ const skills = {
     { name: 'OpenAI', icon: AiOutlineBulb },
     { name: 'Prompt Engineering', icon: AiOutlineSolution },
     { name: 'Langchain', icon: AiOutlineApi },
-    { name: 'Langsmith', icon: AiOutlineCluster },
-    { name: 'Langserve', icon: AiOutlineSolution },
+  { name: 'Langsmith', icon: AiOutlineCluster },
     { name: 'LLM Integration', icon: AiOutlineCloud },
     { name: 'RAG', icon: AiOutlineBulb }
   ]
@@ -177,7 +176,7 @@ export default function ResumeSection() {
           </div>
           <div className="flex justify-center mt-8">
             <a
-              href="/resume.pdf"
+              href="/Sheetal_Shah_Resume.pdf"
               download
               className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
@@ -238,6 +237,22 @@ export default function ResumeSection() {
             Technical Skills
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* AI & ML (moved first) */}
+            <div className="bg-gray-50 rounded-xl p-6 shadow-lg">
+              <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                <AiOutlineBulb className="w-5 h-5 mr-2" />
+                AI & ML
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                {skills.ai.map((skill) => (
+                  <div key={skill.name} className="flex items-center">
+                    <skill.icon className="w-6 h-6 mr-2 text-gray-700" />
+                    <span className="text-gray-600">{skill.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* Languages */}
             <div className="bg-gray-50 rounded-xl p-6 shadow-lg">
               <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
@@ -294,22 +309,6 @@ export default function ResumeSection() {
               </h4>
               <div className="grid grid-cols-2 gap-4">
                 {skills.frameworks.map((skill) => (
-                  <div key={skill.name} className="flex items-center">
-                    <skill.icon className="w-6 h-6 mr-2 text-gray-700" />
-                    <span className="text-gray-600">{skill.name}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* AI & ML */}
-            <div className="bg-gray-50 rounded-xl p-6 shadow-lg">
-              <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <AiOutlineBulb className="w-5 h-5 mr-2" />
-                AI & ML
-              </h4>
-              <div className="grid grid-cols-2 gap-4">
-                {skills.ai.map((skill) => (
                   <div key={skill.name} className="flex items-center">
                     <skill.icon className="w-6 h-6 mr-2 text-gray-700" />
                     <span className="text-gray-600">{skill.name}</span>
