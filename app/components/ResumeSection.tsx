@@ -137,7 +137,7 @@ const education = [
   {
     degree: 'Master of Science in Computer Science',
     school: 'Stony Brook University',
-    year: '2015'
+    year: '2005'
   }
 ];
 
@@ -151,7 +151,7 @@ export default function ResumeSection() {
               Professional Experience
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Tech Lead and Full Stack Engineer with over 20 years of experience building highly scalable, maintainable products across complex architectural landscapes. Specializing in AI-driven innovation and customer-centric solutions at industry-leading companies including Walmart, Zocdoc, Microsoft (AppNexus), and Goldman Sachs.
+              Tech Lead with over 20 years of experience building highly scalable, maintainable products across complex architectural landscapes. Specializing in AI-driven innovation and customer-centric solutions at industry-leading companies including Walmart, Zocdoc, Microsoft (AppNexus), and Goldman Sachs.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Currently collaborating with Zocdoc's Chief AI Officer on PhoneAI, revolutionizing healthcare appointment management through advanced LLM implementations. Previously led Walmart's pioneering OpenAI chatbot integration, delivering transformative customer support solutions that significantly reduced costs while enhancing service quality.
